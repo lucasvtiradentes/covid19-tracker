@@ -8,3 +8,21 @@ body {
    justify-content: center;
    flex-direction: column;
 }
+
+.image {
+   width: 370px;
+   margin: 0 auto;
+   margin-top: 30px;
+   display: flex;
+   justify-content: center;
+}
+
+@media (max-width: 770px) {
+   .container {
+      margin: 0 10%
+   }
+
+   .image {
+      width: 100%;
+   }
+}
