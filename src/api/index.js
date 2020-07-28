@@ -15,15 +15,13 @@ async function fetchData(){
 
       return modifiedData
    } catch (error) {
-      
+      console.log(error)
    }
 }
 
 async function fetchDailyData(){
    try {
       const {data} = await axios.get(`${url}/daily`)
-
-      console.log(data)
 
       const modifiedData = data.map((dailyData) => ({
          confirmed: dailyData.confirmed.total,
@@ -34,12 +32,23 @@ async function fetchDailyData(){
 
       return modifiedData
    } catch (error) {
-      
+      console.log(error)
    }
 }
 
+async function fetchCountries(){
+   try {
+      const {data: {countries}} = await axios.get(`${url}/countries`)
+
+      return countries.map((country) => country.name)
+      
+   } catch (error) {
+      console.log(error)
+   }
+}
 
 export {
    fetchData,
-   fetchDailyData
+   fetchDailyData,
+   fetchCountries
 }
