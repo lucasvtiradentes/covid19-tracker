@@ -7,12 +7,30 @@ const Cards = (props) => {
    return (
       <div className={styles.container}>
          <Grid container spacing={3} justify="Center">
-         <Grid item component={Card}>
+            <Grid item component={Card}>
                <CardContent>
                <Typography color="textSecondary" gutterBottom>Infected</Typography>
                <Typography variant="h5">REAL DATA</Typography>
                <Typography color="textSecondary">REAL DATE</Typography>
-               <Typography variant="body2">Number of active cases of covid19</Typography>
+               <Typography variant="body2">Number of active cases of covid-19</Typography>
+               </CardContent>
+            </Grid>
+
+            <Grid item component={Card}>
+               <CardContent>
+               <Typography color="textSecondary" gutterBottom>Recovered</Typography>
+               <Typography variant="h5">REAL DATA</Typography>
+               <Typography color="textSecondary">REAL DATE</Typography>
+               <Typography variant="body2">Number of recoveries from covid-19</Typography>
+               </CardContent>
+            </Grid>
+
+            <Grid item component={Card}>
+               <CardContent>
+               <Typography color="textSecondary" gutterBottom>Deaths</Typography>
+               <Typography variant="h5">REAL DATA</Typography>
+               <Typography color="textSecondary">REAL DATE</Typography>
+               <Typography variant="body2">Number of deaths caused by covid-19</Typography>
                </CardContent>
             </Grid>
          </Grid>
