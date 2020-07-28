@@ -2,7 +2,7 @@ import React from 'react'
 
 const Chart = () => {
    return (
-      <h1>Chart</h1>
+      <h1>Chart XX</h1>
    )
 }
 
